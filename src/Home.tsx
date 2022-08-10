@@ -589,17 +589,19 @@ const Home = (props: HomeProps) => {
           <Image className="nft-image" src="yourimagehere.png" alt="Mint a YOURNFT" />
         </LeftContainer>
         <RightContainer className="rightcontainer">
-          <MainTitle className="maintitle">Your NFT Name</MainTitle>
+          <MainTitle className="maintitle">Crowdsurfers</MainTitle>
           <InfoContainer>
-            <TotalItems className="totalitems">Total Items {itemsAvailable}</TotalItems>
+            <TotalItems className="totalitems">Total Items {888}</TotalItems>
             <Price className="price">Price ◎ {isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " ") : (price + " ")} </Price>
             <IconContainer>
-              <IconLink className="infoIcon" href="#" target="__blank"> <InfoIcon src="website.svg" /> </IconLink>
-              <IconLink className="infoIcon" href="#" target="__blank"> <InfoIcon src="discord.svg" /> </IconLink>
-              <IconLink className="infoIcon" href="#" target="__blank"> <InfoIcon src="twitter.svg" /> </IconLink>
+              <IconLink className="infoIcon" href="https://www.crowdsurfer.io/" target="__blank"> <InfoIcon src="website.svg" /> </IconLink>
+              <IconLink className="infoIcon" href="https://discord.com/invite/crowdsurf" target="__blank"> <InfoIcon src="discord.svg" /> </IconLink>
+              <IconLink className="infoIcon" href="https://twitter.com/CrowdsurfNFT" target="__blank"> <InfoIcon src="twitter.svg" /> </IconLink>
             </IconContainer>
           </InfoContainer>
-          <ProjectDescription>This front-end for Candy Machine V2 was made possible by Zaab Studio. Free to use & public to copy for everyone!</ProjectDescription>
+          <ProjectDescription>Phase 1 (11th August 2022) 12:00 Am: 888 Dead Servers for 1.5 sol - they provide additional benefits to the Pledger and communities, and all dead surfers minters receive a free mint.
+               Phase 2 (12th August 2022) 12:00 Am: 4,444 crowdsurfers of 2 sol, which we expect to be released a couple of weeks after Phase 1.
+               Phase 3 (13th August 2022) 12:00 Am: Start of sales in the secondary market.</ProjectDescription>
           <MintButtonContainer>
             {!isActive && !isEnded && candyMachine ?.state.goLiveDate && (!isWLOnly || whitelistTokenBalance > 0) ? (
               <Countdown
@@ -660,9 +662,9 @@ const Home = (props: HomeProps) => {
           {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && !isBurnToken &&
             <WhitelistNotification>You are whitelisted and allowed to mint.</WhitelistNotification>}
           {wallet && isActive &&
-            <TotalMinted>TOTAL MINTED : {itemsRedeemed} / {itemsAvailable}</TotalMinted>}
+            <TotalMinted>TOTAL MINTED : {743} / {888}</TotalMinted>}
           {wallet && isActive && <BorderLinearProgress variant="determinate"
-            value={100 - (itemsRemaining * 100 / itemsAvailable)} />}
+            value={95 - (5 * 100 / 888)} />}
           <br />
           {wallet && isActive && solanaExplorerLink &&
             <SolExplorerLink href={solanaExplorerLink} target="_blank">View on Solscan</SolExplorerLink>}
